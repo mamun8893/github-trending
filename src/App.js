@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import TopUserCountry from "./pages/TopUserCountry/TopUserCountry";
 import TopStarsRepo from "./pages/TopStars/TopStarsRepo";
 import DataVisualization from "./pages/DataVisualization/DataVisualization";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isLogin, setIslogin] = useState();
@@ -37,6 +38,7 @@ function App() {
             element={<Login setIslogin={setIslogin} setToken={setToken} />}
           />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

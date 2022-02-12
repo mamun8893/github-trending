@@ -55,7 +55,7 @@ const Home = () => {
   return (
     <div className="main-conatainer">
       <div className="container">
-        <div className="search-box mt-4">
+        <div className="search-box mt-4 mb-80">
           <Form onSubmit={handleSubmit(onSubmit)}>
             <InputGroup className="mb-3 w-50 m-auto">
               <FormControl

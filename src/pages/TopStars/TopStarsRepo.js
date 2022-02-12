@@ -18,7 +18,7 @@ const TopStarsRepo = () => {
   return (
     <div className="top-user-country">
       <div className="container">
-        <div className="mt-4">
+        <div className="mt-4 mb-80">
           <GithubRepo repos={repos} />
         </div>
       </div>

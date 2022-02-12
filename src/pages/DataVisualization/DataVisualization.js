@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./data.css";
-import ApexCharts from "apexcharts";
 import ReactApexChart from "react-apexcharts";
 
 const DataVisualization = () => {
