@@ -24,7 +24,9 @@ const Header = ({ isLogin, handleLogout, handleLogin }) => {
                   <Nav.Link as={Link} to="/top-repos">
                     Top repositories
                   </Nav.Link>
-                  <Nav.Link href="#link">Data visualization</Nav.Link>
+                  <Nav.Link as={Link} to="/data-visualizations">
+                    Data visualization
+                  </Nav.Link>
                   <Nav.Link href="#link" onClick={handleLogout}>
                     Logout
                   </Nav.Link>

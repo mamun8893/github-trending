@@ -7,6 +7,7 @@ import Login from "./components/Login/Login";
 import Home from "./pages/Home/Home";
 import TopUserCountry from "./pages/TopUserCountry/TopUserCountry";
 import TopStarsRepo from "./pages/TopStars/TopStarsRepo";
+import DataVisualization from "./pages/DataVisualization/DataVisualization";
 
 function App() {
   const [isLogin, setIslogin] = useState();
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/top-users" element={<TopUserCountry />} />
           <Route path="/top-repos" element={<TopStarsRepo />} />
+          <Route path="/data-visualizations" element={<DataVisualization />} />
           <Route
             path="/login"
             element={<Login setIslogin={setIslogin} setToken={setToken} />}
