@@ -15,9 +15,15 @@ const Header = ({ isLogin, handleLogout, handleLogin }) => {
             <Nav className="ms-auto">
               {isLogin ? (
                 <>
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">Top user by country</Nav.Link>
-                  <Nav.Link href="#link">Top repositories</Nav.Link>
+                  <Nav.Link as={Link} to="/">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/top-users">
+                    Top user by country
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/top-repos">
+                    Top repositories
+                  </Nav.Link>
                   <Nav.Link href="#link">Data visualization</Nav.Link>
                   <Nav.Link href="#link" onClick={handleLogout}>
                     Logout
